@@ -21,7 +21,7 @@ body {
     font-weight: 800;
     float: left;
     font-family: courier;
-    color: red;
+    color: yellow;
 }
 
 .menu {
@@ -34,10 +34,9 @@ nav {
     margin: auto;
     display: flex;
     line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky; 
+    position: relative;
     top: 0;
-    background: rgba(255, 217, 0, 0.383);
+    background: gray;
     z-index: 1;
     border-bottom:1px solid #364f6b;
     
@@ -55,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -63,9 +62,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: lawngreen;
-    border-bottom-left-radius: 30%;
-    border-top-right-radius: 30%;
+    background-color: orangered;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 section {
