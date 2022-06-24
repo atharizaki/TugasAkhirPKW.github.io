@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Programming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>UAS PKW</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Motivasi</a></li>
+                    <li><a href="#tutors">Pahlawan</a></li>
+                    <li><a href="#partners">Universitas</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#berhitung">Berhitung</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <div class="kolom">
+                <p class="deskripsi">Belajar Programming #dirumahaja</p>
+                <h2>Jangan biarkan impianmu dijajah oleh pendapat orang lain</h2>
+                <p>Disiplin memang tidak mudah, tapi tanpa kedisiplinan, hidup <br> akan jauh lebih sulit.</p>
+                <p>Masukkan kata-kata bijak</p>
+                <form action="#">
+                    <textarea placeholder="ketik sesuatu" name="bijak" id="bijak" cols="50" rows="10"></textarea> <br>
+                    <input class="submit" type="button" value="submit" onclick="submitdata()"/>
+                </form>
+            </div>
+            <img src="coding.jpg" width="700" height="450"/>
+        </section>
+
+        <!-- untuk courses -->
+        <section id="courses">
+            <img src="course.jpg" width="600" height="450"/>
+            <div class="kolom">
+                <p class="deskripsi">Kata-kata Motivasi</p>
+                <h2>Pembelajaran Hidup</h2>
+                <p>"Pembelajaran tidak didapat dengan kebetulan. Ia harus dicari dengan semangat dan disimak dengan tekun." - Abigail Adams</p>
+                <p>"Jika kau menginginkan sesuatu dalam hidupmu yang tak pernah kau punya. Kau harus melakukan sesuatu yang belum pernah kau lakukan." - JD Houson</p>
+                <form action="#">
+                    <textarea placeholder="Ketik sesuatu" name="motiv" id="motiv" cols="50" rows="10"></textarea> <br>
+                    <input class="submit" type="button" value="submit" onclick="kirimdata()">
+                </form>
+            </div>
+        </section>
+
+        <!-- untuk tutors -->
+        <section id="tutors">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Beberapa Nama Pahlawan Kemerdakaan Indonesia</p>
+                    <h2>Pahlawan Kemerdekaan Indonesia</h2>
+                </div>
+
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="Pangeran-Diponegoro.jpg"/>
+                        <p>Pangeran Diponegoro</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="jenderal sudirman.jpg"/>
+                        <p>Jenderal Sudirman</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="mohamad yamin.jpg"/>
+                        <p>Mohamad Yamin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- untuk partners -->
+        <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Beberapa Nama Universitas Terbaik Di Indonesia</p>
+                    <h2>Universitas Terbaik Di Indonesia</h2>
+                </div>
+
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="umy.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="ugm.jpg"/> 
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="itb.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="uny.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Website ini adalah hasil modifikasi saya sendiri dan tanpa campur tangan orang lain!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Bantul, Bantul Regency, Special Region of Yogyakarta</p>
+                    <p>Kode Pos: 57365</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>Instagram </b>Atharizaki</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="berhitung">
+        <div class="tengah">
+            <div class="kolom">
+                <h2> Mari Berhitung</h2>
+            </div>
+            <div class="berhitung-list">
+                <div class="kartu-hitung">
+                    <p class="tambah">Tambah</p>
+                    angka pertama : <input type="text" name="tambah1" value="" id="tambah1"> <br>
+                    angka kedua : <input type="text" name="tambah2" value="" id="tambah2"> <br><br>
+                    <input class="value" type="button" value="hitung" name="submit" onclick="hitungTambah()"> <br><br>
+                    Jawaban : <br> <input type="text" id="jawTam" name="answer" value="">
+                </div>
+                <div class="kartu-hitung">
+                    <p>Kurang</p>
+                    angka pertama : <input type="text" name="kurang1" value="" id="kurang1"> <br>
+                    angka kedua : <input type="text" name="kurang2" value="" id="kurang2"> <br><br>
+                    <input class="value" type="button" value="hitung" name="submit" onclick="hitungKurang()"> <br><br>
+                    Jawaban : <br> <input type="text" id="jawKur" name="answer" value="">
+                </div>
+                <div class="kartu-hitung">
+                    <p>Kali</p>
+                    angka pertama : <input type="text" name="kali1" value="" id="kali1"> <br>
+                    angka kedua : <input type="text" name="kali2" value="" id="kali2"> <br><br>
+                    <input class="value" type="button" value="hitung" name="submit" onclick="hitungKali()"> <br><br>
+                    Jawaban : <br> <input type="text" id="jawKali" name="answer" value="">
+                </div>
+                <div class="kartu-hitung">
+                    <p>Bagi</p>
+                    angka pertama : <input type="text" name="bagi1" value="" id="bagi1"> <br>
+                    angka kedua : <input type="text" name="bagi2" value="" id="bagi2"> <br><br>
+                    <input class="value" type="button" value="hitung" name="submit" onclick="hitungBagi()"> <br><br>
+                    Jawaban : <br> <input type="text" id="jawBagi" name="answer" value="">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2022. <b>Atharizaki.</b> All Rights Reserved.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
