@@ -49,3 +49,16 @@ function hitungBagi() {
     var jawab = document.getElementById("jawBagi");
     jawab.value = bagi1/bagi2;
 }
+
+function gambar1() {
+    var gambartampil = document.getElementById("tampilkan").value;
+    var gambarhacker = document.getElementById("hacker");
+    gambartampil = gambarhacker.style.display = "block";
+}
+
+function gambar2() {
+    var gambarhilang = document.getElementById("hilangkan").value;
+    var gambarhacker = document.getElementById("hacker");
+    gambarhilang = gambarhacker.style.display = "none";
+    
+}

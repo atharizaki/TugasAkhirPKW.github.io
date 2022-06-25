@@ -208,6 +208,41 @@ h3 {
     cursor: pointer;
 }
 
+.gambar-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.kartu-gambar {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#tampilkan {
+    cursor: pointer;
+}
+
+#hilangkan {
+    cursor: pointer;
+}
+
+#hacker {
+    align-items: center;
+}
+
+.bawahan {
+    background-color: aqua;
+}
+
+.bawahan-list {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 #copyright {
     text-align: center;
     width: 100%;
